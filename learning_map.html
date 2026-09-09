@@ -1,0 +1,90 @@
+<html style="margin:0;padding:0;">
+<div style="background-color:transparent;box-sizing:border-box;padding:8px 4px;font-family:'Roboto','PingFang SC','Segoe UI',Arial,sans-serif;">
+
+  <!-- 标题区 -->
+  <div style="padding:14px 16px;border-radius:14px;background:linear-gradient(135deg, rgba(155,187,244,0.16), rgba(155,187,244,0.30));box-sizing:border-box;margin:0 0 14px 0;">
+    <div style="font-size:16px;font-weight:600;color:#1A1B1C;">7 张图 → 5 个知识点 → 1 个 PyCharm 工程</div>
+    <div style="font-size:12px;color:#6B7280;margin-top:4px;line-height:1.5;">学习方式：每个知识点一个 .py 文件，先读文件头讲解 → 运行代码 → 观察每一步矩阵 → 回看图片对照。按 01 → 05 顺序学习。</div>
+  </div>
+
+  <!-- 学习路线 5 步 -->
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px 0;box-sizing:border-box;">
+    <div style="flex:1 1 150px;min-width:0;padding:10px 12px;border-radius:12px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);box-sizing:border-box;">
+      <div style="font-size:11px;color:#6B7280;">STEP 1 · 图1</div>
+      <div style="font-size:13px;font-weight:600;color:#1A1B1C;margin-top:2px;">Agent 工作流程</div>
+      <div style="font-size:11px;color:#6B7280;margin-top:3px;line-height:1.5;">01_agent_workflow.py<br>任务→规划→工具→检查→循环</div>
+    </div>
+    <div style="flex:1 1 150px;min-width:0;padding:10px 12px;border-radius:12px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);box-sizing:border-box;">
+      <div style="font-size:11px;color:#6B7280;">STEP 2 · 图6</div>
+      <div style="font-size:13px;font-weight:600;color:#1A1B1C;margin-top:2px;">自注意力核心</div>
+      <div style="font-size:11px;color:#6B7280;margin-top:3px;line-height:1.5;">02_self_attention.py<br>Q/K/V→打分→softmax→加权</div>
+    </div>
+    <div style="flex:1 1 150px;min-width:0;padding:10px 12px;border-radius:12px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);box-sizing:border-box;">
+      <div style="font-size:11px;color:#6B7280;">STEP 3 · 图2/4/5</div>
+      <div style="font-size:13px;font-weight:600;color:#1A1B1C;margin-top:2px;">多头注意力全流程</div>
+      <div style="font-size:11px;color:#6B7280;margin-top:3px;line-height:1.5;">03_multi_head_attention.py<br>分头→各头算→拼接→输出</div>
+    </div>
+    <div style="flex:1 1 150px;min-width:0;padding:10px 12px;border-radius:12px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);box-sizing:border-box;">
+      <div style="font-size:11px;color:#6B7280;">STEP 4 · 图7</div>
+      <div style="font-size:13px;font-weight:600;color:#1A1B1C;margin-top:2px;">注意力家族 7 兄弟</div>
+      <div style="font-size:11px;color:#6B7280;margin-top:3px;line-height:1.5;">04_attention_family.py<br>MHA/MQA/GQA/MLA/DSA/CSA/KDA</div>
+    </div>
+    <div style="flex:1 1 150px;min-width:0;padding:10px 12px;border-radius:12px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);box-sizing:border-box;">
+      <div style="font-size:11px;color:#6B7280;">STEP 5 · 图3</div>
+      <div style="font-size:13px;font-weight:600;color:#1A1B1C;margin-top:2px;">Spotify 真实架构</div>
+      <div style="font-size:11px;color:#6B7280;margin-top:3px;line-height:1.5;">05_spotify_agent_router.py<br>昂贵模型 vs 便宜模型路由</div>
+    </div>
+  </div>
+
+  <!-- 核心公式带 -->
+  <div style="padding:12px 14px;border-radius:12px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);box-sizing:border-box;margin:0 0 14px 0;">
+    <div style="font-size:12px;font-weight:600;color:#1A1B1C;">贯穿 5 个文件的灵魂公式（图6 中间公式区）</div>
+    <div style="font-size:13px;color:#1A1B1C;margin-top:6px;font-weight:600;text-align:center;background:rgba(155,187,244,0.12);border-radius:8px;padding:8px;box-sizing:border-box;">
+      Attention(Q,K,V) = softmax( Q·Kᵀ / √d_k ) · V
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;box-sizing:border-box;">
+      <div style="flex:1 1 120px;min-width:0;padding:8px 10px;border-radius:10px;background:rgba(155,187,244,0.10);box-sizing:border-box;">
+        <div style="font-size:11px;font-weight:600;color:#1A1B1C;">Q 查询</div>
+        <div style="font-size:11px;color:#6B7280;margin-top:2px;line-height:1.5;">"我要找什么？"<br>每个词问全场</div>
+      </div>
+      <div style="flex:1 1 120px;min-width:0;padding:8px 10px;border-radius:10px;background:rgba(155,187,244,0.10);box-sizing:border-box;">
+        <div style="font-size:11px;font-weight:600;color:#1A1B1C;">K 键</div>
+        <div style="font-size:11px;color:#6B7280;margin-top:2px;line-height:1.5;">"我是什么？"<br>被别人匹配的标签</div>
+      </div>
+      <div style="flex:1 1 120px;min-width:0;padding:8px 10px;border-radius:10px;background:rgba(155,187,244,0.10);box-sizing:border-box;">
+        <div style="font-size:11px;font-weight:600;color:#1A1B1C;">V 值</div>
+        <div style="font-size:11px;color:#6B7280;margin-top:2px;line-height:1.5;">"我有什么内容？"<br>被吸收的信息本体</div>
+      </div>
+      <div style="flex:1 1 120px;min-width:0;padding:8px 10px;border-radius:10px;background:rgba(155,187,244,0.10);box-sizing:border-box;">
+        <div style="font-size:11px;font-weight:600;color:#1A1B1C;">√d_k 缩放</div>
+        <div style="font-size:11px;color:#6B7280;margin-top:2px;line-height:1.5;">给分数"降温"，防 softmax 饱和成 0/1</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 注意力家族演进（图7 右下角） -->
+  <div style="padding:12px 14px;border-radius:12px;background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);box-sizing:border-box;">
+    <div style="font-size:12px;font-weight:600;color:#1A1B1C;">注意力机制演进路线（图7 · 解决一个核心问题：长上下文太贵）</div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:10px;box-sizing:border-box;">
+      <span style="font-size:12px;font-weight:600;color:#1A1B1C;background:rgba(155,187,244,0.16);border-radius:6px;padding:4px 8px;box-sizing:border-box;">MHA</span>
+      <span style="font-size:12px;color:#6B7280;">→</span>
+      <span style="font-size:12px;font-weight:600;color:#1A1B1C;background:rgba(155,187,244,0.16);border-radius:6px;padding:4px 8px;box-sizing:border-box;">MQA</span>
+      <span style="font-size:12px;color:#6B7280;">→</span>
+      <span style="font-size:12px;font-weight:600;color:#1A1B1C;background:rgba(155,187,244,0.16);border-radius:6px;padding:4px 8px;box-sizing:border-box;">GQA</span>
+      <span style="font-size:12px;color:#6B7280;">→</span>
+      <span style="font-size:12px;font-weight:600;color:#1A1B1C;background:rgba(155,187,244,0.16);border-radius:6px;padding:4px 8px;box-sizing:border-box;">MLA</span>
+      <span style="font-size:12px;color:#6B7280;">→</span>
+      <span style="font-size:12px;font-weight:600;color:#1A1B1C;background:rgba(155,187,244,0.16);border-radius:6px;padding:4px 8px;box-sizing:border-box;">DSA</span>
+      <span style="font-size:12px;color:#6B7280;">→</span>
+      <span style="font-size:12px;font-weight:600;color:#1A1B1C;background:rgba(155,187,244,0.16);border-radius:6px;padding:4px 8px;box-sizing:border-box;">CSA</span>
+      <span style="font-size:12px;color:#6B7280;">→</span>
+      <span style="font-size:12px;font-weight:600;color:#1A1B1C;background:rgba(155,187,244,0.16);border-radius:6px;padding:4px 8px;box-sizing:border-box;">KDA</span>
+    </div>
+    <div style="font-size:11px;color:#6B7280;margin-top:8px;line-height:1.6;">
+      解决思路：① 减少 KV 头（MQA/GQA）→ ② 压缩 KV 表示（MLA）→ ③ 只看重要 Token（DSA/CSA）→ ④ 线性递推（KDA）。<br>
+      04_attention_family.py 里用真实数字算出：同一模型 MHA 的 KV Cache 是 MQA 的 8 倍。
+    </div>
+  </div>
+
+</div>
+</html>
